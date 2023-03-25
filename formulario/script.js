@@ -15,6 +15,8 @@ btn.addEventListener("click", function(e) {
 
     const tel = document.querySelector("#tel");
     const valuetel = tel.value;
-    document.querySelector("#texttel").innerHTML = "Tel: " + valuetel;
+    document.querySelector("#texttel").textContent = "Tel: " + valuetel;
+
+    console.log(valuename,valueemail,valuetel);
 
 });
