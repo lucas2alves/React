@@ -1,22 +1,17 @@
 
-const btn = document.querySelector("#send");
+var formulario = document.querySelector('form');
+const btn = document.querySelector('#send');
 
-btn.addEventListener("click", function(e) {
 
-    e.preventDefault();
+formulario.onsubmit = function(){
+   if(!document.querySelector("input").value){
 
-    const name = document.querySelector("#name");
-    const valuename = name.value;
-    document.querySelector("#textname").innerHTML ="Name: " + valuename;
+      alert("Preencha corretamente!");
+      return false;
+      
+   }
 
-    const email = document.querySelector("#email");
-    const valueemail = email.value;
-    document.querySelector("#textemail").innerHTML = "Email: " + valueemail;
+   alert ("Formulario enviado com sucesso");
+   
+}
 
-    const tel = document.querySelector("#tel");
-    const valuetel = tel.value;
-    document.querySelector("#texttel").textContent = "Tel: " + valuetel;
-
-    console.log(valuename,valueemail,valuetel);
-
-});

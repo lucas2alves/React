@@ -34,9 +34,7 @@ div {
 
 input {
     display: block;
-    width: 40vw;
-    margin: 20px;
-    padding: 7px;
+   
     text-align: center;
     font-size: 1em;
     color: rgb(3, 3, 121);
@@ -46,13 +44,15 @@ input {
 
 #send {
     display: inline-block;
-    width: 5vw;
     text-align: center;
-    margin-top: -2px;
-    margin-left: 43%;
     background-color: rgb(3, 3, 121);
     color: #fff;
     border-radius: 5px;
     border-color: #8d8c8c;
     cursor: pointer;
+}
+
+alert {
+    background-color: blue;
+    color: black;
 }

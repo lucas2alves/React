@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"defer></script>
+    <script src="./script.js" defer></script>
     <title>Formulario</title>
 </head>
 
 <body>
-    <div class="container">
-        <form action="">
-            <H1>Cadastre-se</H1>
-            <input type="text" name="name" id="name" class="name" placeholder="Name" required>
-            <input type="email" name="email" id="email" class="email" placeholder="@Email" required>
-            <input type="text" name="tel" id="tel" class="tel" placeholder="(xx) xxxxxxxxx" required>
-            <input type="submit" id="send" onclick="" value="Enviar">
-        </form>
-        <div class="respostas">
-            <p id="textname"></p>
-            <p id="textemail"></p>
-            <p id="texttel"></p>
-    </div>
-    </div>
+    <form onsubmit="submitForm(event)">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome"required>
+        <br>
+        <label for="estados">Escolha o estado</label>
+        <select id="estados"required>
+            <option value=""></option>
+            <option value="">SP</option>
+            <option value="">MG</option>
+            <option value="">RJ</option>
+        </select>
+        <br>
+        <label for="">concordo com os termos</label>
+        <input type="radio" id="termos" value="concordo" required>
+        <br>
+        <label for="onde">confirmar</label>
+        <input type="checkbox" id="confirmo" value="confirmar"required>
+        <br>
+        <button type="submit" id="send">Enviar</button>
+    </form>
+   
 </body>
    
 </html>
