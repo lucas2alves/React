@@ -2,7 +2,11 @@
 body {
     display: flex;
     justify-content: center;
+    @media (max-width: 600px) {
+        display: inline;
+    }
 }
+
 
 h1 {
 color: #fff;
@@ -40,7 +44,8 @@ input {
     color: rgb(3, 3, 121);
     border: solid 2px;
     border-color: rgb(3, 3, 121);
-}
+    }
+
 
 #send {
     display: inline-block;
@@ -50,9 +55,16 @@ input {
     border-radius: 5px;
     border-color: #8d8c8c;
     cursor: pointer;
+    margin-bottom: 5%;
 }
 
 alert {
     background-color: blue;
     color: black;
 }
+
+form {
+    width: auto;
+    @media (max-width: 600px) {
+        margin-left: 25%;
+}}

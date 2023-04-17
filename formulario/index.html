@@ -10,26 +10,28 @@
 </head>
 
 <body>
-    <form onsubmit="submitForm(event)">
+    <form id="form" onsubmit="submitForm(event)">
         <label for="nome">Nome</label>
         <input type="text" id="nome"required>
         <br>
         <label for="estados">Escolha o estado</label>
         <select id="estados"required>
             <option value=""></option>
-            <option value="">SP</option>
-            <option value="">MG</option>
-            <option value="">RJ</option>
+            <option value="SP">SP</option>
+            <option value="MG">MG</option>
+            <option value="RJ">RJ</option>
         </select>
         <br>
-        <label for="">concordo com os termos</label>
-        <input type="radio" id="termos" value="concordo" required>
+        <label for="onde">Concordo com os termos</label>
+        <input type="checkbox" id="confirmo" value="Confirmou" required>
         <br>
-        <label for="onde">confirmar</label>
-        <input type="checkbox" id="confirmo" value="confirmar"required>
-        <br>
-        <button type="submit" id="send">Enviar</button>
+        <button type="submit" onclick="(e)" id="send" value="">Enviar</button>
     </form>
+
+    <div>
+        <p id="dadostela">Dados do usuario: <br> </p>
+      
+    </div>
    
 </body>
    
