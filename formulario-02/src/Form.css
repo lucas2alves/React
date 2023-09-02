@@ -1,0 +1,13 @@
+.resposta {
+    background-color: rgb(255, 145, 36);
+    width: 30%;
+    margin-left: 35vw;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+}
