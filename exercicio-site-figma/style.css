@@ -50,13 +50,15 @@ table {
 
 header {
     height: 150px;
-    width: 1920px;
 }
 footer {
     background-color: black;
-    height: 150px;
-    width: 1920px;
-    margin-top: 230px;
+    height: 150px; 
+    @media (max-width: 500px)  {
+        
+        margin-top: -10px;
+        padding-bottom: 50px;
+    } 
 }
 footer h1,p {
     color: white;
@@ -64,16 +66,33 @@ footer h1,p {
 footer p {
     float: right;
     font-size: 14px;
-    margin-right: 162px;
     margin-top: 67px;
+    margin-right: 5%;
+    @media (max-width: 500px)  {
+
+        margin: 0;
+        text-align: center;
+        float: left;
+        margin-left: 10%;
+        margin-top: 10px;
+    } 
+    @media (max-width: 3800px)  {
+
+        margin: 0;
+        text-align: center;
+        float: left;
+        margin-left: 10%;
+        margin-top: 10px;
+    
+    } 
 }
 section {
-    width: 1920px;
-    height: 1080.68px;
-    margin: 0;
+    width: auto;
+    height: auto;
+    margin-bottom: 5rem;
 }
 .segmentosedit {
-    height: auto;
+    margin-top: 18%;
 }
 .logo,nav,ul,li{
     display: inline-block;
@@ -88,39 +107,75 @@ ul {
     margin-top: 67px;
 }
 .logo {
-    width: 180.5px;
-    height: 35.5px;
     margin-top: 57px;
-    margin-left: 206px;
-    font-size: 40px;
+    margin-left: 5%;
+    background-color: black;
+     @media (max-width: 500px)  {
+
+        margin-left: 30vw;
+    } 
+    @media (max-width: 370px)  {
+
+        margin-left: 25vw;
+    } 
 }
 
 li,a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    @media (max-width: 800px)  {
+        font-size: 14px;
+    } 
+    @media (max-width: 500px)  {
+
+        font-size: 14px;
+    
+    } 
 }
 li {
     height: 17px;
-    margin-right: 151px;
+    margin-right: 6vw;
+    @media (max-width: 500px)  {
+
+        
+        margin-right: 4vw;
+    } 
 }
 
 .img {
-    width: 1074.08px;
-    height: 842.68px;
+    width: 50%;
+    height: 30vw;
     background-color: blue;
-    margin-top: 88px;
+    margin-top: 58px;
     margin-left: 17px;
     display: contents;
+   
+    @media (max-width: 500px)  {
+        margin-top: 90px;
+        width: 90%;
+    } 
 }
 .title01 {
-    font-size: 64px;
-    width: 504px;
+    font-size: 34px;
+    width: 40%;
     height: 156px;
     margin-top: 188px;
-    margin-right: 320px;
+    margin-right:5%;
     display: inline-block;
     float: right;
+    @media (max-width: 800px)  {
+        margin-top: 88px;
+        font-size: 28px;
+    } 
+    @media (max-width: 500px)  {
+
+        width: 100%;
+        height: 250px;
+        font-size: 24px;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 50px;
+    } 
 }
 
 .img,.title01,.texto01{
@@ -128,105 +183,229 @@ li {
 }
 
 h4 {
-    font-size: 36px;
+    font-size: 24PX;
     margin-top: 42px;
+    @media (max-width: 800px)  {
+        font-size: 18px;
+    } 
+    @media (max-width: 500px)  {
+
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    } 
 }
 .botao {
-    font-size: 24px;
-    width: 307px;
+    font-size: 20PX;
+    width: 17rem;
     height: 72px;
     margin-top: 42px;
     color: blue;
+    cursor: pointer;
+    @media (max-width: 800px)  {
+        
+        font-size: 14px;
+        width: 10rem;
+        height: 42px;
+        margin-top: 32px;
+    } 
 }
 
 .local {
-    font-size: 48px;
+    font-size: 28PX;
     text-align: center;
-    padding-top: 110px;
+    @media (max-width: 500px)  {
+
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    } 
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+    bottom: unset;
 }
 
 
 .texto02 {
     text-align: center;
-    width: 1231px;
-    height: 88px;
-    margin-left: 345px;
+    width: 65%;
+    margin-left: 18%;
+    @media (max-width: 500px)  {
+
+        width: 80%;
+        margin-left: 10%; 
+        text-align: center;
+        margin-bottom: 10%;
+    } 
 }
 
 .quadrado {
-    width: 975px;
-    height: 494px;
-    margin-left: 450px;
-    margin-top: 78px;
-    background-color: rgb(188, 188, 188);
+    width: 60%;
+    height: 30VW;
+    margin-left: 20%;
+    margin-top: 4%;
+    @media (max-width: 500px)  {
+
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+    } 
 }
 .servicos {
-    font-size: 48px;
-    margin-left: 840px;
+    font-size: 28PX;
+    text-align: center;
+    @media (max-width: 500px)  {
+
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    } 
 }
 .sv {
-    width: 1270px;
-    height: 448px;
-    margin-top: 77px;
-    margin-left: 336px;
+    width: 70%;
+    margin-top: 4%;
+    margin-left: 18%;
+    @media (max-width: 500px)  {
+
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0;
+    } 
 }
 .sv h1 {
-    color: white;
+    color: rgb(252, 252, 252);
 }
 .d01,.d02,.d03,.d04 {
     background-color: blue;
     display: inline-block;
-    margin-right: 13px;
-    width: 300px;
-    height: 448px;
+    margin-right: 1%;
+    width: 22%;
+    height: 22VW;
+    @media (max-width: 800px)  {
+        
+        width: 42%;
+        margin-left: 2%;
+        height: 40VW;
+        margin-bottom: 20px;
+
+        @media (max-width: 500px)  {
+            width: 95%;
+            height: 300px;
+        } 
+    } 
 }
 .sv h1 {
-    margin-left: 45px;
-    margin-top: 105px;
-    font-size: 36px;
+    margin-left: 10%;
+    margin-top: 30%;
+    font-size: 24PX;
+    @media (max-width: 500px)  {
+        font-size: 20px;
+        margin-left: 4%;
+    margin-top: 6%;
+    } 
 }
 .sv p {
-    margin-left: 22px;
-    margin-right: 7px;
-    margin-top: 70px;
-    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20%;
+    font-size: 14PX;
+    @media (max-width: 500px)  {
+        margin-bottom: -10px;
+        font-size: 16px;
+    } 
+    
 }
 .segmentos {
-    font-size: 48px;
-    margin-left: 810px;
-    margin-top: -140px;
+    font-size: 28PX;
+    text-align: center;
+    margin-top: -5%;
+    @media (max-width: 800px)  {  
+        margin-top: -10%;
+    } 
+    @media (max-width: 500px)  {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    } 
 }
 
 .sg {
-    width: 1588px;
-    height: 268.5px;
-    margin-left: 162px;
-    margin-top: 78px;
+    width: 80%;
+    height: 18VW;
+    margin-top: 4%;
+    margin-left: 13%;
+    @media (max-width: 800px)  {
+        
+        height: 42vw;
+        width: 93%;
+        margin-left: 7%;
+    }
+    @media (max-width: 500px)  {
+        height: 100%;
+        margin: 0;
+    } 
+    
 }
 .s01,.s02,.s03 {
     background-color: blue;
     display: inline-block;
-    width: 395.86px;
-    height: 268.5px;
+    width: 22%;
+    height: 80%;
+    @media (max-width: 500px)  {
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+   
 }
 .s01,.s02 {
-    margin-right: 195px;
+    margin-right: 12%;
+    @media (max-width: 500px)  {
+        margin-right: 0;
+        width: 100%;
+        height: 260px;
+        margin-left: 4%;
+    } 
+}
+.s03 {
+    @media (max-width: 500px)  {
+        margin-right: 0;
+        width: 100%;
+        height: 260px;
+        margin-left: 4%;
+    } 
 }
 .sg h1 {
     font-size: 24px;
-    margin-left: 70px;
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 5%;
+    @media (max-width: 800px)  {
+        
+        font-size: 20px;
+    } 
 }
 .sg p {
-    font-size: 18px;
-    margin-left: 70px;
-    width: 300px;
+    font-size: 12PX;
+    margin-left: 8%;
+    width: 85%;
     color: black;
+    @media (max-width: 500px)  {
+        font-size: 16px;
+    } 
 }
 .icon {
-    width: 57px;
-    height: 109px;
+    width: 20%;
+    height: 40%;
+    margin-bottom: 8%;
     background-color: rgb(214, 214, 214);
     border-bottom: 1px solid;
     border-right: 1px solid;
+    @media (max-width: 800px)  {
+        
+        width: 50%;
+    } 
+    
 }
+
