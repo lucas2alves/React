@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 22px 28px 32px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+body {
+    background-color: #333333 !important;
+}
+
+.container {
+    width: 990px;
+    margin: 0 auto;
+    background-color: #333333;
+}
+.container-white {
+    background-color: #F8F8F8;
+}
+.container-footer {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #E7E7E7;
+}
+.container-whie {
+    background-color: #dc002d;
+}
+
+.home {
+    color: #696969 !important;
+    border-bottom: 5px solid;
+    border-color: #b2b2b2;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    margin: auto calc(34px / 2);  
+}
+.menu ul {
+    margin-top: 2.5rem;
+   
+}
+
+.menu ul li a {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dc002d;
+    text-decoration: none;
+}
+
+
+a{
+    padding: 7px;
+}
+li a:hover {
+    background-color: #dc002d;
+    color: #ffffff !important;
+}
+.image {
+    width: 60%;
+}
+#banner {
+    background-color: #dc002d;
+    margin: 0;
+    padding: 0;
+
+}
+.cr {
+    width: 40%;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+#content {
+    background-color: #fff;
+    padding-bottom: 4rem;
+    width: 1300px;
+    margin: 0 auto;
+
+}
+h2 {
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.btn-saiba-mais {
+    border: 1px solid #dcdcdc;
+    color: #dc002d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    line-height: 15.6pt;
+    padding: 5px;
+    text-decoration: none;
+    margin: 2rem;
+    margin-left: 1.5rem;
+}
+
+.btn-saiba-mais:hover {
+    color: #333333;
+}
+
+.video {
+    width: 80%;
+}
+
+p.fc {
+    text-align: right;
+}
+footer {
+    background-color: #E7E7E7;
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
